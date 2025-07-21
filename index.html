@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HarshTech Excel Clone</title>
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <link rel="shortcut icon" href="./assets/IMAGES/harshtech.jpg" type="image/x-icon">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HarshTech Mini Excel Clone</h1>
+    <h3>Founder: Harshad Teli</h3>
+    <p>
+      This is a lightweight spreadsheet-style application specially
+      Designed for online and offline use with responsive layout, CSV export, and user-friendly interface.
+      Start using the mini Excel clone in your browser or download the package to customize it locally.
+    </p>
+    <div class="btns">
+      <a href="#"><button id="obtn">🧮 Use Online</button></a>
+     <a href="#"><button id="dbtn">📦 Download Package</button></a>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2025 HarshTech |  All rights reserved.
+  </div>
+  <audio src="./assets/VOICE/download.mp3" id="download"></audio>
+  <audio src="./assets/VOICE/open.mp3" id="open"></audio>
+  <script>
+    const dbtn = document.getElementById("dbtn");
+    const download = document.getElementById("download");
+    dbtn.addEventListener("click", () => {
+      download.play();
+       setTimeout(() => {
+      window.open("github.com")
+    }, dbtn.duration * 1000);
+});
+      
+    const obtn = document.getElementById("obtn");
+    const open = document.getElementById("open");
+    obtn.addEventListener("click", () => {
+      open.play();
+       setTimeout(() => {
+     window.location.href="./assets/PAGES/excel.html";
+    }, open.duration * 1050);
+      
+
+    });
+  </script>
+  <script src="./assets/JS/prevent.js"></script>
+</body>
+</html>

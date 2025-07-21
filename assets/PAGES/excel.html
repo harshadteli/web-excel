@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Excel Sheet</title>
+  <link rel="stylesheet" href="../CSS/excel.css">
+  <link rel="shortcut icon" href="../IMAGES/harshtech.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <h2>📊  Excel Sheet</h2>
+  <div id="controls">
+    <button onclick="clearAll()">🧹 Clear All</button>
+    <button onclick="exportToCSV()">📥 Export CSV</button>
+    <button onclick="printPDF()">🖨️ Print to PDF</button>
+    <button onclick="addRow()">➕ Add Row</button>
+    <button onclick="addColumn()">➕ Add Column</button>
+    <input type="text" id="searchInput" placeholder="🔍 Search" oninput="searchTable()">
+    <button onclick="sumColumn()">Σ Sum</button>
+    <button onclick="avgColumn()">📈 Avg</button>
+    <button onclick="toggleBold()">🅱 Bold</button>
+    <button onclick="toggleRed()">🔴 Red</button>
+  </div>
+
+  <div id="formula-hint"></div>
+  <div id="excel-container">
+    <table id="excel-sheet"></table>
+  </div>
+<script src="../JS/excel.js"></script>
+<script src="../JS/prevent.js"></script>
+</body>
+</html>
